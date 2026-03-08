@@ -117,7 +117,10 @@ export default function Home() {
           >
             FLIPMYSTOCK.COM
           </a>
-          <nav className="hidden items-center gap-6 text-sm text-slate-300 md:flex" aria-label="Primary">
+          <nav
+            className="hidden items-center gap-6 text-sm text-slate-300 md:flex"
+            aria-label="Primary"
+          >
             <a href="#why-this-domain-works" className="transition hover:text-white">
               Why it works
             </a>
@@ -363,6 +366,72 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <section
+          id="secure-acquisition-options"
+          aria-labelledby="secure-acquisition-options-title"
+          className="border-t border-white/8 py-20 sm:py-24"
+        >
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_16px_60px_rgba(2,8,23,0.28)] backdrop-blur sm:p-10 lg:p-12">
+            <SectionHeading
+              eyebrow="Transaction Structure"
+              title="Secure Acquisition Options"
+              description="For qualified buyers, transfer can be structured through established marketplace channels or a private agreement, depending on preference and deal terms."
+              titleId="secure-acquisition-options-title"
+            />
+
+            <div className="mt-12 grid gap-5 lg:grid-cols-2">
+              <article className="rounded-3xl border border-cyan-300/12 bg-slate-950/50 p-7 transition duration-200 hover:border-cyan-300/20 hover:bg-slate-950/65">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200/80">
+                  Marketplace Transfer Options
+                </p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <a
+                    href="https://sedo.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300/30 hover:text-cyan-100"
+                  >
+                    Sedo
+                  </a>
+                  <a
+                    href="https://dan.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300/30 hover:text-cyan-100"
+                  >
+                    Dan.com
+                  </a>
+                </div>
+                <p className="mt-5 text-sm leading-7 text-slate-300">
+                  Secure transfer and payment handling available through reputable domain
+                  marketplaces including <span className="font-semibold text-white">Sedo</span> and{" "}
+                  <span className="font-semibold text-white">Dan.com</span>.
+                </p>
+              </article>
+
+              <article className="rounded-3xl border border-white/10 bg-slate-950/45 p-7 transition duration-200 hover:border-white/16 hover:bg-slate-950/60">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">
+                  Direct Agreement Option
+                </p>
+                <p className="mt-5 text-sm leading-7 text-slate-300">
+                  For buyers who prefer a direct agreement, private arrangements can also be
+                  discussed. Payment via PayPal is available upon mutual agreement. PayPal account
+                  details will be shared once terms are finalized.
+                </p>
+                <p className="mt-5 text-sm leading-7 text-slate-400">
+                  Marketplace-based transfer remains the primary path for buyers seeking a familiar,
+                  structured closing process.
+                </p>
+              </article>
+            </div>
+
+            <p className="mt-8 border-t border-white/8 pt-6 text-sm leading-7 text-slate-400">
+              Transfer can be completed securely through an agreed marketplace or structured
+              private transaction.
+            </p>
+          </div>
+        </section>
       </div>
 
       <footer className="border-t border-white/8">
@@ -377,4 +446,3 @@ export default function Home() {
     </main>
   );
 }
-
